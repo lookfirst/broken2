@@ -1,0 +1,46 @@
+{
+  "name": "broken",
+  "version": "1.0.0",
+  "description": "broken",
+  "author": "Jon Stevens <jon@gearlaunch.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:lookfirst/broken.git"
+  },
+  "devDependencies": {
+    "babel": "^5.8.20",
+    "babel-core": "^5.8.20",
+    "gulp": "^3.9.0",
+    "gulp-helpers": "^2.0.7",
+    "jspm": "^0.16.0-beta.3"
+  },
+  "jspm": {
+    "directories": {
+      "baseURL": "target"
+    },
+    "configFile": "src/main/config.js",
+    "dependencies": {
+      "angular": "github:angular/bower-angular@^1.4.3",
+      "angular-sanitize": "github:angular/bower-angular-sanitize@^1.4.3",
+      "babel-core": "npm:babel-core@^5.8.20",
+      "clean-css": "npm:clean-css@^3.3.7",
+      "css": "github:systemjs/plugin-css@^0.1.6",
+      "jquery": "github:components/jquery@^2.1.4",
+      "selectize": "github:brianreavis/selectize.js@^0.12.1",
+      "ui-select": "github:angular-ui/ui-select@^0.12.1"
+    },
+    "devDependencies": {
+      "babel": "npm:babel-core@^5.6.4",
+      "babel-runtime": "npm:babel-runtime@^5.6.4",
+      "core-js": "npm:core-js@^0.9.17"
+    }
+  },
+  "scripts": {
+    "postinstall": "./node_modules/.bin/jspm install"
+  },
+  "engines": {
+    "node": "0.12.x",
+    "npm": "2.x.x"
+  }
+}
